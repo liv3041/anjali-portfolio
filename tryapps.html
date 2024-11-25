@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anjali Verma</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#feedback">Feedback</a></li>
+            <li><a href="tryapps.html">Try Apps</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Anjali Verma</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="index.html#feedback" onclick="toggleMenu()">Feedback</a></li>
+            <li><a href="tryapps.html" onclick="toggleMenu()">Try Apps</a></li>
+          </div>
+        </div>
+      </nav>
+      <!-- <section class="apps">
+        <div class="apps-container">
+            <div class="items">
+                    <div class="image"><img src="./assets/tale.png"></div>
+                    
+                    <div class="type">
+                        <span class="image-android"><img src="./assets/android.png"></span>Android App</div>
+                        <div class="name">Wondertales</div>
+                    <div class="btn-container">
+                        <button class="btn-color-1" onclick="">Learn More</button>
+                        <button class="btn-color-2" onclick="">Try Apk</button>
+                    </div>
+
+            </div>
+
+        </div>
+      </section> -->
+      <section class="apps-section">
+        <div class="app-card">
+            <img src="./assets/tale.png" alt="App 1 Image" class="app-image">
+            <div class="app-info">
+                <h2 class="app-name">Wondertales</h2>
+                
+                <p class="app-type"><img src="./assets/android.png" class="app-type-image">Android App</p>
+                <div class="app-buttons">
+                    <button class="btn learn-more" onclick="location.href='applist.html'">Learn More</button>
+                    <button class="btn try" onclick="">Try</button>
+                </div>
+            </div>
+        </div>
+        <div class="app-card">
+            <img src="./assets/noteapp.png" alt="App 2 Image" class="app-image">
+            <div class="app-info">
+                <h2 class="app-name">Notes Application</h2>
+                <p class="app-type"><img src="./assets/android.png" class="app-type-image">Android App</p>
+                <div class="app-buttons">
+                    <button class="btn learn-more" onclick="">Learn More</button>
+                    <button class="btn try" onclick="">Try</button>
+                </div>
+            </div>
+        </div>
+        <!-- Add more app cards as needed -->
+    </section>
+    
+</body>
+</html>

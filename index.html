@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="">
+
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anjali Verma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="tryapps.html">Try Apps</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anjali Verma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#feedback" onclick="toggleMenu()">Feedback</a></li>
+          <li><a href="#tryapps" onclick="toggleMenu()">Try Apps</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="./assets/dora.png" alt="Anjali Verma profile picture" />
+        <div>
+          <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Anjali Verma</h1>
+            <p class="section_text_p2">Software Developer</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/anjali-resume.pdf')"
+              >
+                Downlad CV
+              </button>
+              <button
+                class="btn btn-color-1"
+                onclick="location.href = './#feedback'"
+              >
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="My Linkedin profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/in/anjali-verma-591627125/'"
+              />
+              <img
+                src="./assets/github.png"
+                alt="My github profile"
+                class="icon"
+                onclick="location.href='https://github.com/liv3041'"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/dora2.jpg"
+            alt="Profile picture"
+            class="about pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img
+                src="./assets/reputation.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Currently</h3>
+              <p class="details-container-text">
+                Practicing Android development and exploring new technologies.
+              </p>
+            </div>
+            <div class="details-container-2">
+              <img
+                src="./assets/mortarboard.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p class="details-container-2-text">Integrated M.Sc. in Mathematics and Computing</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/next.png" alt="next icon" class="icon arrow"
+      onclick="location.href='./#education'"/>
+    </section>
+    <section id = "skills">
+      <p class="skills_section_text_p1">Coding Milestones and Skills</p>
+      <div class="coding_milestones_and_skills_container">
+      <div class="top">
+        <div class="top_coding_details">
+          <div class="top_details_leetcode">
+            <span class="leetcode_animated-number" data-target="200" >1 </span><span class="plus-sign">+</span>
+            <p class="details_leetcode_p1">Problem solved on Leetcode</p>
+            
+          </div>
+          <div class="top_details_gfg">
+            <span class="GfG_animated-number" data-target="300">1</span><span class="plus-sign">+</span>
+            <p class="details_gfg_p1">Problem solved on GeeksforGeeks</p>
+          </div>
+        </div>
+        <div class="image_container">
+          
+        </div>
+        
+        
+
+      </div>
+      <div class="bottom">
+        
+
+      </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
