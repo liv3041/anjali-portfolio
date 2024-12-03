@@ -72,8 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(educationSection);
 });
 function goBack() {
-    window.history.back();
+    if (window.history.length > 1) {
+        window.history.back();
+    } else {
+        window.location.href = "index.html"; // Replace with your fallback URL
+    }
 }
+
 
 
 
