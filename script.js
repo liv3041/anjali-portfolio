@@ -71,6 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(educationSection);
 });
+function goBack() {
+    window.history.back();
+}
 
 
 

@@ -604,6 +604,12 @@ section{
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+.back-button{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .list li:hover {
     background-color: #e2e6ea;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
