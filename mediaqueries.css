@@ -8,3 +8,14 @@
         display: flex;
     }
 }
+@media (max-width: 768px) {
+    .article-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .article-grid {
+        grid-template-columns: 1fr; /* 1 column on smaller screens */
+    }
+}
