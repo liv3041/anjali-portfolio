@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Try Apps</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
     <nav id="desktop-nav">
@@ -20,7 +22,7 @@
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div class="logo">Anjali Verma</div>
+        <div class="logo"><a href="index.html" onclick="toggleMenu()">Anjali Verma</a></div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
@@ -78,6 +80,6 @@
         </div>
         <!-- Add more app cards as needed -->
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>

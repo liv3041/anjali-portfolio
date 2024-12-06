@@ -8,14 +8,327 @@
         display: flex;
     }
 }
-@media (max-width: 768px) {
+/* Media Query for Mobile (max-width: 600px) */
+@media screen and (max-width: 600px) {
+
+    section {
+      padding-top: 2vh;
+      margin: 0; /* Remove side margins */
+      height: auto; /* Allow dynamic height */
+     
+    }
+  
+    .profile {
+      flex-direction: column; /* Stack content vertically */
+    
+      gap: 2rem; /* Smaller gap for compact layout */
+    
+
+      height: auto; /* Adjust height for content */
+    }
+  
+    .section_pic-container {
+      height: auto; /* Smaller size for the image */
+      width: auto;
+      flex-wrap: wrap;
+    }
+  
+    .section_pic-container img {
+      width: 20%;
+      height: 20%;
+      object-fit: cover; /* Ensure image fits the container */
+      border-radius: 10%; /* Optional: Circle profile picture */
+    }
+  
+    .section_text {
+      text-align: center;
+      padding: 0 1rem; /* Add padding for better readability */
+    }
+  
+    .section_text_p1,
+    .section_text_p2 {
+      font-size: 1.25rem; /* Smaller font size for mobile */
+    }
+  
+    .title {
+      font-size: 2rem; /* Adjust title size */
+    }
+  
+    #socials-container {
+      flex-wrap: wrap; /* Allow icons to wrap */
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .icon {
+      cursor: pointer;
+      height: 1.5rem; /* Reduce icon size */
+    }
+  
+    .btn-container {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 0.75rem; /* Adjust gap between buttons */
+    }
+  
+    .btn {
+      padding: 0.75rem; /* Adjust button size */
+      width: 100%; /* Full-width buttons */
+      max-width: 250px; /* Optional: Limit max width */
+    }
+  
+    .btn-color-1:hover,
+    .btn-color-2:hover {
+      color: white; /* Ensure hover color contrast */
+    }
+    .profile-pic {
+        width: 10px; /* Adjust the size */
+        height: 20px;
+        border-radius: 20%;
+        object-fit: cover;
+      }
+
+      .about {
+        padding: 2rem 1rem; /* Add padding for better spacing */
+        /* position: relative; */
+      }
+    
+      .section-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 2rem; /* Reduce gap for compact view */
+        height: auto; /* Allow dynamic height */
+      }
+    
+      .section_pic-container {
+        height: 0px; /* Smaller image height */
+        width: 0px; /* Smaller image width */
+        margin: 0 auto; /* Center the image */
+      }
+    
+      .about-pic {
+        width: 0%;
+        height: 0%;
+        border-radius: 1rem; /* Reduce border radius for smaller screens */
+        object-fit: cover; /* Ensure proper scaling of the image */
+      }
+    
+      .about-details-container {
+        flex-direction: column; /* Stack details vertically */
+        gap: 1.5rem; /* Reduce gap between sections */
+        margin: 0; /* Remove unnecessary margins */
+      }
+    
+      .about-container {
+        flex-direction: column; /* Stack containers vertically */
+        gap: 1rem; /* Add spacing between containers */
+        margin: 0;
+      }
+    
+      .details-container,
+      .details-container-2 {
+        flex: none; /* Remove flex for better alignment */
+        padding: 1rem; /* Reduce padding */
+        margin: 0 auto; /* Center the containers */
+        width: 100%; /* Full-width on mobile */
+        max-width: 300px; /* Optional: Limit maximum width */
+      }
+    
+      .details-container-text,
+      .details-container-2-text {
+        font-size: 0.9rem; /* Adjust text size */
+        text-align: justify; /* Ensure text is justified */
+      }
+    
+      .text-container {
+        margin: 0 auto; /* Center the text container */
+        padding: 0 1rem; /* Add padding for better readability */
+        text-align: justify; /* Justify the text */
+        gap: 1rem; /* Adjust gap */
+      }
+    
+      .text-container p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        line-height: 1.5; /* Improve readability */
+      }
+    
+      .arrow {
+        position: static; /* Reset position for mobile */
+        margin: 1rem auto; /* Center the arrow icon */
+        display: block; /* Ensure it appears as a block */
+      }
+    
+      .icon {
+        width: 1.5rem; /* Resize icons */
+        height: 1.5rem;
+        margin: 0 auto; /* Center icons */
+      }
+    
+      /* Adjust section titles and headings */
+      .section_text_p1 {
+        font-size: 1.25rem; /* Adjust title size */
+        text-align: center; /* Center align text */
+      }
+    
+      .title {
+        font-size: 1.75rem; /* Adjust font size for smaller screens */
+        text-align: center;
+        margin-bottom: 1rem; /* Add spacing below title */
+      }
+      #skills {
+        padding: 2rem 1rem;
+        position: relative;
+      }
+    
+      .skills_section_text_p1 {
+        font-size: 1.5rem; /* Reduce the font size */
+        text-align: center;
+        margin-bottom: 1rem; /* Add some spacing */
+      }
+    
+      .coding_milestones_and_skills_container {
+        flex-direction: column;
+        height: auto; /* Allow the container to adjust dynamically */
+      }
+    
+      .top {
+        padding: 1rem;
+        margin: 0;
+      }
+    
+      .top_coding_details {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        height: auto; /* Allow height to adjust */
+      }
+    
+      .top_details_leetcode,
+      .top_details_gfg {
+        margin: 1rem auto; /* Center align with some margin */
+        padding: 1rem;
+        width: 90%; /* Make it responsive for smaller screens */
+        text-align: center; /* Center the text */
+      }
+    
+      .leetcode_animated-number,
+      .GfG_animated-number {
+        font-size: 3rem; /* Adjust font size */
+        padding: 0; /* Remove padding */
+      }
+    
+      .plus-sign {
+        font-size: 2rem; /* Reduce size of the plus sign */
+      }
+    
+      .details_leetcode_p1,
+      .details_gfg_p1 {
+        font-size: 0.9rem; /* Reduce font size */
+        text-align: center; /* Center align text */
+      }
+    
+      .bottom {
+        padding: 1rem 0;
+        margin: 0;
+      }
+    
+      .languages_text {
+        font-size: 1.25rem; /* Adjust size for mobile */
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    
+      .coding_languages,
+      .other_framework_tools {
+        flex-wrap: wrap; /* Allow wrapping of icons */
+        justify-content: center;
+        gap: 1rem; /* Add spacing between icons */
+        padding-top: 1rem;
+      }
+    
+      .java-icon {
+        width: 60px; /* Reduce icon size */
+        height: 60px;
+      }
+    
+      .arrow {
+        margin: 1rem auto; /* Center the arrow for navigation */
+        display: block; /* Ensure it takes up the full width */
+      }
+    
+      .image_container img {
+        max-width: 80%; /* Adjust the image size for mobile */
+        height: auto;
+        margin: 0 auto;
+      }
+  }
+  
+
+/* Tablet View (max-width: 768px) */
+@media screen and (max-width: 768px) {
     .article-grid {
-        grid-template-columns: 1fr 1fr; /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    .certificate-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    .article-card, .certificate-card {
+        padding: 10px;
+    }
+
+    .article-card h2, .certificate-card h2 {
+        font-size: 16px;
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    /* Stack sections vertically */
+    .articles, .certifications {
+        display: block;
+        margin: 10px 0; /* Adjust margin for proper spacing */
+    }
+
+    /* Article Grid */
     .article-grid {
-        grid-template-columns: 1fr; /* 1 column on smaller screens */
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    /* Certificate Grid */
+    .certificate-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    .article-card, .certificate-card {
+        padding: 8px;
+    }
+
+    .article-card h2, .certificate-card h2 {
+        font-size: 14px;
+    }
+
+    /* Ensure sections are stacked one after the other */
+    .article-section, .certificate-section {
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .app-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
+  
+
+
