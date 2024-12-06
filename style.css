@@ -574,14 +574,17 @@ section{
 
 .btn:hover {
     background-color: #0056b3;
+    cursor: pointer;
 }
 
 .btn.try {
     background-color: gainsboro;
+    cursor: pointer;
 }
 
 .btn.try:hover {
     background-color: #218838;
+    cursor: pointer;
 }
 /* Feedback */
 .head{
